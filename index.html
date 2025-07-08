@@ -112,13 +112,23 @@
       color: #222;
       font-weight: 600;
     }
-    .service-img-placeholder {
-      width: 100%;
-      height: 180px;
-      background: #ddd;
-      margin: 20px 0;
-      border-radius: 10px;
-    }
+   .service-img-placeholder {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 15px;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 2px solid #333;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-img-placeholder img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
     .carousel-section {
       flex-direction: column;
       align-items: center;
@@ -130,48 +140,89 @@
       font-weight: 800;
       margin-bottom: 20px;
     }
+    .carousel-container {
+      width: 100%;
+      max-width: 1200px;
+      overflow: hidden;
+    }
     .carousel-wrapper {
       display: flex;
       gap: 16px;
       padding: 10px 0;
-      animation: scroll-left 20s linear infinite;
+      width: fit-content;
+      animation: scroll-left 40s linear infinite;
     }
     @keyframes scroll-left {
       0% { transform: translateX(0); }
       100% { transform: translateX(-50%); }
     }
     .carousel-item {
-      min-width: 250px;
-      height: 180px;
-      background: #ccc;
-      border-radius: 12px;
-      flex-shrink: 0;
-      box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
-      border: 2px solid #000;
-    }
-    .whatsapp-button {
-      background-color: #25D366;
-      color: white;
-      font-size: 22px;
-      font-weight: bold;
-      border: none;
-      padding: 20px 40px;
-      border-radius: 50px;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 60px auto;
-      width: fit-content;
-      box-shadow: 0 0 12px rgba(0,0,0,0.2);
-      cursor: pointer;
-      text-decoration: none;
-      animation: pulse 2s infinite;
-    }
-    .whatsapp-button i {
-      margin-right: 12px;
-      font-size: 26px;
-    }
+  width: 180px;
+  height: 180px;
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 2px solid #000;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+   .whatsapp-button {
+  background-color: #25D366;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  padding: 25px 30px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 60px auto;
+  width: fit-content;
+  box-shadow: 0 0 12px rgba(0,0,0,0.2);
+  cursor: pointer;
+  text-decoration: none;
+  animation: pulse 2s infinite;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.whatsapp-button i {
+  font-size: 36px;
+}
+
+.whatsapp-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-button {
+    font-size: 16px;
+    padding: 18px 20px;
+    gap: 10px;
+  }
+
+  .whatsapp-button i {
+    font-size: 30px;
+  }
+
+  .whatsapp-text {
+    font-size: 16px;
+  }
+}
+
+
     @keyframes pulse {
       0% { transform: scale(1); }
       50% { transform: scale(1.05); }
@@ -211,6 +262,61 @@
         padding: 16px 30px;
       }
     }
+
+ .emailtext888 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 15px;
+  color: #333;
+}
+.emailtext888 a {
+  color: #00bfa6;
+  text-decoration: underline;
+  word-break: break-word;
+}
+@media (max-width: 768px) {
+  .emailtext888 {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+}
+    
+    
+    .whatsapp-subtext {
+  text-align: center;
+  margin-top: -10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #25D366;
+}
+@media (max-width: 768px) {
+  .whatsapp-subtext {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+}
+    
+   .gif-banner-section123 {
+  width: 100%;
+  background: #000; /* Black outer background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.gif-banner-img123 {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border: 3px solid #000;
+  border-radius: 10px;
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
+}
+
+
+
   </style>
 </head>
 <body>
@@ -218,67 +324,102 @@
     <img src="https://storage.perfectcdn.com/ijhexb/nr774oxwudzm29du.jpg" alt="EasyCreate Logo" class="logo-img123">
     <div class="logo-text123"><span>Easy</span><span>Create ✨</span></div>
   </header>
+  
+  <section class="gif-banner-section123">
+  <img src="https://storage.perfectcdn.com/ijhexb/cr02f5zhoy88kjif.gif" alt="EasyCreate Banner" class="gif-banner-img123" />
+</section>
 
   <section class="hero">
-    <h1>Designs That Make You Shine<br>設計點亮你的品牌</h1>
-    <p>Professional logos and GIFs for creators, businesses, and brands<br>專業標誌與動畫設計服務</p>
-    <a href="contact.html"><i class="fas fa-pen-nib"></i> Start Your Design 開始設計</a>
+    <h1>Designs That Make You Shine<br>设计点亮你的品牌</h1>
+    <p>Professional logos and GIFs for creators, businesses, and brands<br>专业标志与动画设计服务</p>
+    <a href="contact.html"><i class="fas fa-pen-nib"></i> Start Your Design 开始设计</a>
   </section>
 
   <section class="services">
     <div class="service-box">
-      <div class="service-img-placeholder"></div>
-      <h3><i class="fas fa-palette"></i> Logo Design 標誌設計</h3>
-      <p>Custom logo creation tailored to your brand identity and vibe.<br>根據您的品牌形象量身打造獨一無二的標誌。</p>
+      <div class="service-img-placeholder"><img src="https://storage.perfectcdn.com/ijhexb/oofplnpdrnsdurrm.gif" alt="Design Example" /></div>
+      <h3><i class="fas fa-palette"></i> Logo Design 标志设计</h3>
+      <p>Custom logo creation tailored to your brand identity and vibe.<br>根据您的品牌形象量身打造独一无二的标志。</p>
     </div>
     <div class="service-box">
-      <div class="service-img-placeholder"></div>
-      <h3><i class="fas fa-film"></i> GIF Design 動圖設計</h3>
-      <p>Animated GIFs for websites, social media, marketing, and more.<br>為網站、社群平台及行銷活動製作生動的GIF動畫。</p>
+      <div class="service-img-placeholder"><img src="https://storage.perfectcdn.com/ijhexb/5y2l1zjsnu9ybpn4.gif" alt="Design Example" /></div>
+      <h3><i class="fas fa-film"></i> GIF Design 动画设计</h3>
+      <p>Animated GIFs for websites, social media, marketing, and more.<br>为网站、社交平台及营销活动制作生动的GIF动画。</p>
     </div>
   </section>
 
-  <section class="carousel-section">
-    <h2><i class="fas fa-images"></i> Sample Works 設計範例</h2>
+ <section class="carousel-section">
+  <h2><i class="fas fa-images"></i> Sample Works 設計範例</h2>
+  <div class="carousel-container">
     <div class="carousel-wrapper">
-      <div class="carousel-item"></div>
-      <div class="carousel-item"></div>
-      <div class="carousel-item"></div>
-      <div class="carousel-item"></div>
-      <div class="carousel-item"></div>
-      <div class="carousel-item"></div>
+      <div class="carousel-item"><img src="https://storage.perfectcdn.com/ijhexb/wjcdl8jqr6ej2u1i.png" alt="Design Example" /></div>
+      <div class="carousel-item"><img src="https://storage.perfectcdn.com/ijhexb/is5ixb6slaqm5zg1.png" alt="Design Example" /></div>
+      <div class="carousel-item"><img src="https://storage.perfectcdn.com/ijhexb/3pg8tl7pmi4k7bzo.png" alt="Design Example" /></div>
+      <div class="carousel-item"><img src="https://storage.perfectcdn.com/ijhexb/a8cis5h4lhe12eza.png" alt="Design Example" /></div>
+      <div class="carousel-item"><img src="https://storage.perfectcdn.com/ijhexb/24iicrnitu1cmsjm.png" alt="Design Example" /></div>
+      <div class="carousel-item"><img src="https://storage.perfectcdn.com/ijhexb/qdmxdf3g18hjgwum.png" alt="Design Example" /></div>
+      <div class="carousel-item"><img src="https://storage.perfectcdn.com/ijhexb/xisj4gxbzmts0n5t.png" alt="Design Example" /></div>
+      <div class="carousel-item"><img src="https://storage.perfectcdn.com/ijhexb/81awsy4z5dow3o6n.png" alt="Design Example" /></div>
+      <div class="carousel-item"><img src="https://storage.perfectcdn.com/ijhexb/zczoej5688r1caus.png" alt="Design Example" /></div>
+      <div class="carousel-item"><img src="https://storage.perfectcdn.com/ijhexb/l2apbwlqhblbgzx9.png" alt="Design Example" /></div>
+      <div class="carousel-item"><img src="https://storage.perfectcdn.com/ijhexb/i2t2qhglojk1ikuo.png" alt="Design Example" /></div>
+      <div class="carousel-item"><img src="https://storage.perfectcdn.com/ijhexb/wjcdl8jqr6ej2u1i.png" alt="Design Example" /></div>
     </div>
-  </section>
+  </div>
+</section>
 
   <section class="aboutus">
     <div class="info-box123">
-      <div class="service-img-placeholder"></div>
-      <h3><i class="fas fa-user-friends"></i> About Us 關於我們</h3>
-      <p>We are passionate designers dedicated to delivering clean, creative, and impactful visuals for your brand.<br>我們是一群熱愛設計的創作者，致力於為您的品牌打造乾淨、創意且具影響力的視覺作品。</p>
+      <div class="service-img-placeholder"><img src="https://storage.perfectcdn.com/ijhexb/tazscnpd7x86p9we.gif" alt="Design Example" /></div>
+      <h3><i class="fas fa-user-friends"></i> About Us 关于我们</h3>
+      <p>We are passionate designers dedicated to delivering clean, creative, and impactful visuals for your brand.<br>我们是一群热爱设计的创作者，致力于为您的品牌打造干净、创意且具影响力的视觉作品。</p>
     </div>
     <div class="info-box123">
-      <div class="service-img-placeholder"></div>
-      <h3><i class="fas fa-bullseye"></i> Our Mission 我們的使命</h3>
-      <p>To make high-quality design accessible and affordable for individuals, creators, and startups.<br>讓每個人、創作者與新創企業都能享有高品質的設計。</p>
+      <div class="service-img-placeholder"><img src="https://storage.perfectcdn.com/ijhexb/ux8tzenwgetymkp9.gif" alt="Design Example" /></div>
+      <h3><i class="fas fa-bullseye"></i> Our Mission 我们的使命</h3>
+      <p>To make high-quality design accessible and affordable for individuals, creators, and startups.<br>让每个人、创作者与新创企业都能享有高品质的设计。</p>
     </div>
   </section>
 
-  <a class="whatsapp-button" href="https://wa.me/601112686880" target="_blank">
-    <i class="fab fa-whatsapp"></i> Contact Us for Quotation 聯絡我們報價
-  </a>
+<a class="whatsapp-button centered" href="https://wa.me/601112686880" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+  <div class="whatsapp-text">
+    Contact Us for Quotation<br>联络我们报价
+  </div>
+</a>
+
+
+  <br>
+  
+  <p class="emailtext888">
+  📧 Email: <a href="mailto:easycreatedesign2025@gmail.com">easycreatedesign2025@gmail.com</a>
+</p>
+
 
   <section class="links123">
     <div class="info-box123">
-      <h3><i class="fas fa-compass"></i> Explore More 探索更多</h3>
-      <p><a href="about.html"><i class="fas fa-info-circle"></i> About Us 關於我們</a></p>
-      <p><a href="services.html"><i class="fas fa-cogs"></i> Our Services 我們的服務</a></p>
-      <p><a href="contact.html"><i class="fas fa-envelope"></i> Contact 聯絡我們</a></p>
-      <p><a href="terms.html"><i class="fas fa-file-contract"></i> Terms & Refund 條款與退款</a></p>
+      <h3><i class="fas fa-compass"></i> Explore More <br> 探索更多</h3>
+      <p><a href="about.html"><i class="fas fa-info-circle"></i> About Us 关于我們</a></p>
+      <p><a href="services.html"><i class="fas fa-cogs"></i> Our Services 我们的服务</a></p>
+      <p><a href="contact.html"><i class="fas fa-envelope"></i> Contact 联系我们</a></p>
+      <p><a href="terms.html"><i class="fas fa-file-contract"></i> Terms & Refund 条款与退款</a></p>
     </div>
   </section>
 
-  <footer>
-    &copy; 2025 EasyCreate. All rights reserved.<br>版權所有 &copy; 2025 EasyCreate
-  </footer>
+<footer>
+  <p style="margin-bottom: 8px;">
+    <a href="mailto:easycreatedesign2025@gmail.com" style="color: #00bfa6; text-decoration: none; font-weight: bold;">
+      <i class="fas fa-envelope"></i> easycreatedesign2025@gmail.com
+    </a>
+  </p>
+  <p>
+    <a href="https://wa.me/601112686880" style="color: #25D366; text-decoration: none; font-weight: bold;">
+      <i class="fab fa-whatsapp"></i> +60 11-1268 6880 (WhatsApp)
+    </a>
+  </p>
+  <p style="margin-top: 10px; color: #999; font-size: 15px;">
+    © 2025 EasyCreate. All rights reserved. / 版权所有 © 2025 EasyCreate
+  </p>
+</footer>
 </body>
 </html>
