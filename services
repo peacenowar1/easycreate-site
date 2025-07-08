@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EasyCreate | Our Services</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f5efe1;
+      color: #222;
+      line-height: 1.8;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      padding: 20px;
+      background-color: #f5efe1;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .logo-wrap123 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .logo-img123 {
+      height: 40px;
+      width: auto;
+      border-radius: 6px;
+      border: 2px solid #00ffcc;
+      box-shadow: 0 0 8px #00ffcc;
+    }
+    .logo-text123 {
+      font-size: 32px;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+    }
+    .logo-text123 span:first-child {
+      color: white;
+      background-color: #00bfa6;
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin-right: 4px;
+    }
+    .logo-text123 span:last-child {
+      color: #000;
+    }
+
+    .services-page {
+      padding: 50px 20px;
+    }
+    .service-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin: 0 auto 60px;
+      max-width: 1200px;
+    }
+    .service-card {
+      background: #fff;
+      border: 3px solid #000;
+      border-radius: 12px;
+      max-width: 480px;
+      width: 100%;
+      box-shadow: 8px 8px 15px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      text-align: center;
+    }
+    .service-card img {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .service-card h2 {
+      font-size: 24px;
+      color: #00bfa6;
+      font-weight: 900;
+      margin-bottom: 15px;
+    }
+    .service-card h2 i {
+      margin-right: 6px;
+      animation: bounce 2s infinite;
+    }
+    .service-card p, .service-card li {
+      font-size: 18px;
+      font-weight: 600;
+      color: #333;
+    }
+    .service-card .price {
+      margin-top: 12px;
+      font-size: 16px;
+      color: #555;
+      font-weight: 600;
+    }
+    .footer {
+      text-align: center;
+      font-size: 15px;
+      padding: 20px;
+      background: #f5efe1;
+      color: #777;
+      margin-top: 60px;
+    }
+    .footer i {
+      animation: bounce 2s infinite;
+    }
+
+    .services-header123-green {
+      text-align: center;
+      padding: 50px 20px 40px;
+      background-color: #00bfa6;
+      color: white;
+    }
+    .services-header123-green h1 {
+      font-size: 38px;
+      font-weight: 900;
+      margin-bottom: 25px;
+    }
+    .services-header123-green h1 i {
+      margin-right: 10px;
+      animation: bounce 2s infinite;
+    }
+    .whatsapp-btn123-white {
+      display: inline-block;
+      background-color: white;
+      color: #00bfa6;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 16px 28px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+      animation: pulse 2s infinite;
+      line-height: 1.4;
+    }
+    .whatsapp-btn123-white i {
+      margin-right: 10px;
+      font-size: 22px;
+      color: #00bfa6;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    @media (max-width: 768px) {
+      .logo-img123 {
+        height: 28px;
+      }
+      .logo-text123 {
+        font-size: 24px;
+      }
+      .service-card {
+        padding: 20px;
+        margin: 0 12px;
+      }
+      .services-header123-green h1 {
+        font-size: 26px;
+      }
+      .whatsapp-btn123-white {
+        font-size: 16px;
+        padding: 14px 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-wrap123">
+      <img class="logo-img123" src="https://storage.perfectcdn.com/ijhexb/nr774oxwudzm29du.jpg" alt="EasyCreate Logo">
+      <div class="logo-text123">
+        <span>Easy</span><span>Create ✨</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="services-header123-green">
+    <h1><i class="fas fa-tools"></i> Our Services 服务项目</h1>
+    <a class="whatsapp-btn123-white" href="https://wa.me/601112686880" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+      Contact Us for Quotation<br>联系我们报价
+    </a>
+  </section>
+
+  <br>
+
+  <div class="service-section">
+    <div class="service-card">
+      <img src="https://storage.perfectcdn.com/ijhexb/n4880c0apug07lqz.gif" alt="Logo Design">
+      <h2><i class="fas fa-pen-nib"></i> Logo Design 标志设计</h2>
+      <p>根据您的品牌形象量身打造独一无二的标志。</p>
+      <p class="price">Price: RM 50 – RM 1000</p>
+    </div>
+
+    <div class="service-card">
+      <img src="https://storage.perfectcdn.com/ijhexb/sb1n3p1jw116jdr3.gif" alt="Single Image">
+      <h2><i class="fas fa-image"></i> Single Image 单张图片</h2>
+      <p>为社交平台及营销活动制作吸引人的图片。</p>
+      <p class="price">Price: RM 20 – RM 300</p>
+    </div>
+
+    <div class="service-card">
+      <img src="https://storage.perfectcdn.com/ijhexb/2ie3y4tdphqoztdz.gif" alt="GIF Design">
+      <h2><i class="fas fa-film"></i> GIF Animation 动画设计</h2>
+      <p>为网站、社交平台及营销活动制作生动的GIF动画。</p>
+      <p class="price">Price: RM 30 – RM 600</p>
+    </div>
+
+    <div class="service-card">
+      <img src="https://storage.perfectcdn.com/ijhexb/ok2irqkowoshmi80.gif" alt="Bundles">
+      <h2><i class="fas fa-box"></i> Bundles 套餐组合</h2>
+      <p>一次购买多项设计服务，享受更划算的价格！</p>
+      <p class="price">Price: RM 100 – RM 2000</p>
+    </div>
+
+    <div class="service-card">
+      <img src="https://storage.perfectcdn.com/ijhexb/4qkk4432ohhrfi1y.gif" alt="Branding Package">
+      <h2><i class="fas fa-palette"></i> Branding & Identity Package / 品牌形象整合方案</h2>
+      <ul>
+        <li>完整LOGO组合（PNG, SVG, 透明背景）</li>
+        <li>品牌色彩方案</li>
+        <li>2张横幅设计</li>
+        <li>3个社交平台发帖模板</li>
+        <li>简易品牌指南PDF</li>
+      </ul>
+      <p class="price">Price: RM 1,200 – RM 2,000</p>
+    </div>
+
+    <div class="service-card">
+      <img src="https://storage.perfectcdn.com/ijhexb/bfbn9iadw0a1d21o.gif" alt="Content Kit">
+      <h2><i class="fas fa-photo-video"></i> Content Marketing Kit / 内容营销素材包</h2>
+      <ul>
+        <li>10张客制化图片发帖</li>
+        <li>5个GIF或动画发帖</li>
+        <li>英文+中文文案撰写</li>
+        <li>视觉一致性打包</li>
+      </ul>
+      <p class="price">Price: RM 1,000 – RM 1,800</p>
+    </div>
+
+    <div class="service-card">
+      <img src="https://storage.perfectcdn.com/ijhexb/g9g6wd0417h35dc2.gif" alt="Strategy Consultation">
+      <h2><i class="fas fa-comments"></i> Social Media Strategy Consultation / 社交媒体策略顾问服务</h2>
+      <ul>
+        <li>1对1咨询（Zoom或聊天）</li>
+        <li>社交平台全方位分析</li>
+        <li>30天内容日历</li>
+        <li>标签+发帖策略</li>
+        <li>每周分析追踪（可选）</li>
+      </ul>
+      <p class="price">Price: RM 1,000 – RM 2,500</p>
+    </div>
+
+    <div class="service-card">
+      <img src="https://storage.perfectcdn.com/ijhexb/rihrgp4z3kt344ae.gif" alt="Startup Pack">
+      <h2><i class="fas fa-rocket"></i> Startup Launch Design Pack / 创业公司启动设计套装</h2>
+      <ul>
+        <li>Logo + 2张横幅 + 品牌故事图</li>
+        <li>产品宣传海报</li>
+        <li>5张社群启动图像</li>
+        <li>1个动画GIF预告图</li>
+      </ul>
+      <p class="price">Price: RM 1,200 – RM 2,200</p>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <p><i class="fas fa-phone"></i> WhatsApp: <a href="https://wa.me/601112686880">+60 11-1268 6880</a> | 📧 Email: <a href="mailto:easycreatedesign2025@gmail.com">easycreatedesign2025@gmail.com</a></p>
+    <p>版权所有 © 2025 EasyCreate</p>
+  </footer>
+</body>
+</html>
+
+
