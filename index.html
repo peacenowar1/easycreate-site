@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -315,6 +316,55 @@
   box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
 }
 
+.cta-buttons123 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.cta-buttons123 a {
+  background: #00bfa6;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.cta-buttons123 a i {
+  margin-right: 8px;
+  animation: bounce 2s infinite;
+}
+
+.cta-buttons123 a:hover {
+  background: #009e88;
+}
+
+/* Mobile: stack the buttons vertically */
+@media (max-width: 768px) {
+  .cta-buttons123 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons123 a {
+    width: 90vw; /* Increased width for better mobile fit */
+    max-width: 320px;
+    font-size: 16px;
+    padding: 16px 20px;
+    text-align: center;
+  }
+}
+
 
 
   </style>
@@ -332,8 +382,10 @@
   <section class="hero">
     <h1>Designs That Make You Shine<br>设计点亮你的品牌</h1>
     <p>Professional logos and GIFs for creators, businesses, and brands<br>专业标志与动画设计服务</p>
-    <a href="contact.html"><i class="fas fa-pen-nib"></i> Start Your Design 开始设计</a>
-      <a href="services.html"><i class="fas fa-cogs"></i> Check Our Services 查看服务</a>
+    <div class="cta-buttons123">
+  <a href="contact.html"><i class="fas fa-pen-nib"></i> Start Your Design 开始设计</a>
+  <a href="services.html"><i class="fas fa-cogs"></i> Check Our Services 查看服务</a>
+</div>
   </section>
 
   <section class="services">
