@@ -139,22 +139,6 @@
       100% { transform: scale(1); }
     }
 
-    @media (max-width: 768px) {
-      .contact-header h1 {
-        font-size: 26px;
-      }
-      .logo-text {
-        font-size: 24px;
-      }
-      .contact-content p {
-        font-size: 16px;
-      }
-      .whatsapp-btn {
-        font-size: 16px;
-        padding: 12px 20px;
-      }
-    }
-
     .contact-form-section {
       margin-top: 40px;
       padding: 20px;
@@ -175,47 +159,66 @@
       margin-bottom: 20px;
     }
 
-    form#contact-form {
-      max-width: 500px;
-      margin: 0 auto;
-    }
-
-    form#contact-form input,
-    form#contact-form textarea {
+    iframe {
       width: 100%;
-      padding: 12px;
-      margin-bottom: 15px;
+      height: 750px;
+      border-radius: 12px;
       border: 2px solid #00bfa6;
-      border-radius: 6px;
-      font-size: 16px;
-      background-color: #fefefe;
+      box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
     }
 
-    form#contact-form button {
-      background-color: #00bfa6;
-      color: white;
-      padding: 12px 24px;
-      font-size: 16px;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: 0.3s;
-      display: block;
-      margin: 0 auto;
+    @media (max-width: 768px) {
+      .contact-header h1 {
+        font-size: 26px;
+      }
+      .logo-text {
+        font-size: 24px;
+      }
+      .contact-content p {
+        font-size: 16px;
+      }
+      .whatsapp-btn {
+        font-size: 16px;
+        padding: 12px 20px;
+      }
+      iframe {
+        height: 850px;
+      }
     }
+    
+  .google-form-wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-    form#contact-form button:hover {
-      background-color: #01907d;
-    }
+.google-form-wrapper iframe {
+  width: 100%;
+  height: 750px;
+  border-radius: 12px;
+  border: 2px solid #00bfa6;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+}
 
-    #formStatus {
-      margin-top: 10px;
-      text-align: center;
-      font-weight: bold;
-      color: #00bfa6;
-    }
+/* Mobile */
+@media (max-width: 768px) {
+  .google-form-wrapper {
+    width: 100%;
+  }
 
+  .google-form-wrapper iframe {
+    height: 850px;
+  }
+}
+
+    @media (max-width: 768px) {
+  .contact-form-section {
+    margin: 20px 5%;
+  }
+}
+
+    
+    
   </style>
 </head>
 <body>
@@ -251,43 +254,24 @@
     </div>
   </section>
 
-  <section class="contact-form-section">
-    <h2><i class="fas fa-paper-plane"></i> Send Us a Message / 留言给我们</h2>
-    <form id="contact-form">
-      <input type="text" name="name" placeholder="Your Name / 您的名字" required>
-      <input type="email" name="email" placeholder="Your Email / 您的电邮" required>
-      <textarea name="message" placeholder="Your Message / 您的留言" rows="6" required></textarea>
-      <button type="submit">Send / 发送</button>
-      <p id="formStatus"></p>
-    </form>
-  </section>
-
+ <section class="contact-form-section">
+  <h2><i class="fas fa-paper-plane"></i> Send Us a Message / 留言给我们</h2>
+  <div class="google-form-wrapper">
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSe4LgcHfA2KanMTRuUNs8aUz06qXjRb3RM_mxGs7jZFheX-Iw/viewform?embedded=true"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
+      allowfullscreen
+    ></iframe>
+  </div>
+</section>
+  
+  
   <footer>
     <p><i class="fas fa-phone"></i> WhatsApp: <a href="https://wa.me/601112686880">+60 11-1268 6880</a> |
     📧 Email: <a href="mailto:easycreatedesign2025@gmail.com">easycreatedesign2025@gmail.com</a></p>
     <p>版权所有 © 2025 EasyCreate</p>
   </footer>
-
-  <script>
-    const scriptURL = "https://script.google.com/macros/s/AKfycbysIeKDTj40AY-WOdbxStK2c3aD-v_--yimbHdYFULV8zQH3SwahyNis59-ds_vxUI0-Q/exec";
-
-    const form = document.getElementById("contact-form");
-    const status = document.getElementById("formStatus");
-
-    form.addEventListener("submit", e => {
-      e.preventDefault();
-      fetch(scriptURL, {
-        method: 'POST',
-        body: new FormData(form)
-      })
-      .then(response => {
-        status.innerText = "Submitted successfully! 提交成功！";
-        form.reset();
-      })
-      .catch(error => {
-        status.innerText = "Submission failed. Please try again.";
-      });
-    });
-  </script>
 </body>
 </html>
