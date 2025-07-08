@@ -3,10 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EasyCreate</title>
+  <meta name="description" content="EasyCreate - Logo and GIF Design Services">
+  <title>EasyCreate | Logo & GIF Design</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f5f7fa;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .logo {
+      font-size: 32px;
+      font-weight: 700;
+      color: #00bfa6;
+    }
+    .logo span {
+      font-size: 28px;
+      color: #444;
+    }
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #00bfa6 0%, #007a70 100%);
+      color: white;
+    }
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    .hero a {
+      background: white;
+      color: #00bfa6;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .hero a:hover {
+      background: #f0f0f0;
+    }
+    .services {
+      padding: 60px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      background: #fff;
+    }
+    .service-box {
+      background: #fefefe;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+      width: 280px;
+      text-align: center;
+    }
+    .service-box h3 {
+      font-size: 22px;
+      color: #00bfa6;
+      margin-bottom: 10px;
+    }
+    .service-box p {
+      font-size: 15px;
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background: #fafafa;
+      color: #999;
+    }
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+      .hero p {
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
-<body style="font-family: Arial; text-align: center; padding: 50px;">
-  <h1>🚀 Welcome to EasyCreate.online!</h1>
-  <p>Your logo and GIF design site is now live.</p>
+<body>
+  <header>
+    <div class="logo">✨ Easy<span>Create</span></div>
+  </header>
+
+  <section class="hero">
+    <h1>Designs That Make You Shine</h1>
+    <p>Professional logos and GIFs for creators, businesses, and brands</p>
+    <a href="contact.html">Start Your Design</a>
+  </section>
+
+  <section class="services">
+    <div class="service-box">
+      <h3>Logo Design</h3>
+      <p>Custom logo creation tailored to your brand identity and vibe.</p>
+    </div>
+    <div class="service-box">
+      <h3>GIF Design</h3>
+      <p>Animated GIFs for websites, social media, marketing, and more.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 EasyCreate. All rights reserved.
+  </footer>
 </body>
 </html>
