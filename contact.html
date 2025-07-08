@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | EasyCreate</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f5efe1;
+      color: #222;
+      line-height: 1.8;
+    }
+    header {
+      background-color: #f5efe1;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .logo-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-img {
+      height: 40px;
+      border-radius: 6px;
+      border: 2px solid #00ffcc;
+      box-shadow: 0 0 8px #00ffcc;
+    }
+    .logo-text {
+      font-size: 30px;
+      font-weight: 900;
+    }
+    .logo-text span:first-child {
+      background-color: #00bfa6;
+      color: white;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+    .logo-text span:last-child {
+      color: #000;
+    }
+
+    .contact-header {
+      background-color: #00bfa6;
+      color: white;
+      padding: 60px 20px 40px;
+      text-align: center;
+    }
+    .contact-header h1 {
+      font-size: 36px;
+      font-weight: 900;
+    }
+    .contact-header h1 i {
+      margin-right: 10px;
+      animation: bounce 2s infinite;
+    }
+
+    .contact-content {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .contact-content img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      box-shadow: 6px 6px 15px rgba(0,0,0,0.1);
+    }
+    .contact-content p {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .whatsapp-btn {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 14px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+      animation: pulse 2s infinite;
+    }
+
+    .whatsapp-btn i {
+      margin-right: 10px;
+      font-size: 22px;
+    }
+
+    .email-line {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .email-line a {
+      color: #00bfa6;
+      text-decoration: underline;
+    }
+
+    .working-hours {
+      font-size: 16px;
+      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 25px;
+      background: #f5efe1;
+      color: #777;
+      margin-top: 60px;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 768px) {
+      .contact-header h1 {
+        font-size: 26px;
+      }
+      .logo-text {
+        font-size: 24px;
+      }
+      .contact-content p {
+        font-size: 16px;
+      }
+      .whatsapp-btn {
+        font-size: 16px;
+        padding: 12px 20px;
+      }
+    }
+
+    .contact-form-section {
+      margin-top: 40px;
+      padding: 20px;
+      background: #ffffff;
+      border: 2px solid #00bfa6;
+      border-radius: 10px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 4px 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .contact-form-section h2 {
+      text-align: center;
+      font-size: 24px;
+      font-weight: 800;
+      color: #00bfa6;
+      margin-bottom: 20px;
+    }
+
+    form#contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    form#contact-form input,
+    form#contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 2px solid #00bfa6;
+      border-radius: 6px;
+      font-size: 16px;
+      background-color: #fefefe;
+    }
+
+    form#contact-form button {
+      background-color: #00bfa6;
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+      display: block;
+      margin: 0 auto;
+    }
+
+    form#contact-form button:hover {
+      background-color: #01907d;
+    }
+
+    #formStatus {
+      margin-top: 10px;
+      text-align: center;
+      font-weight: bold;
+      color: #00bfa6;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-wrap">
+      <img class="logo-img" src="https://storage.perfectcdn.com/ijhexb/nr774oxwudzm29du.jpg" alt="EasyCreate Logo">
+      <div class="logo-text">
+        <span>Easy</span><span>Create ✨</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="contact-header">
+    <h1><i class="fas fa-envelope-open-text"></i> Contact Us / 联系我们</h1>
+  </section>
+
+  <section class="contact-content">
+    <img src="https://storage.perfectcdn.com/ijhexb/9tcx4ow58i6azmns.gif" alt="Contact GIF Placeholder">
+    <p>欢迎您与我们联系，告诉我们您的创意与需求，我们将协助您把品牌视觉提升到更高的层次！</p>
+
+    <div class="contact-links">
+      <a class="whatsapp-btn" href="https://wa.me/601112686880" target="_blank">
+        <i class="fab fa-whatsapp"></i> WhatsApp 即时报价
+      </a>
+
+      <div class="email-line">
+        📧 Email: <a href="mailto:easycreatedesign2025@gmail.com">easycreatedesign2025@gmail.com</a>
+      </div>
+
+      <div class="working-hours">
+        🕒 工作时间：每天 10:00 AM - 8:00 PM（马来西亚时间）
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-form-section">
+    <h2><i class="fas fa-paper-plane"></i> Send Us a Message / 留言给我们</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name / 您的名字" required>
+      <input type="email" name="email" placeholder="Your Email / 您的电邮" required>
+      <textarea name="message" placeholder="Your Message / 您的留言" rows="6" required></textarea>
+      <button type="submit">Send / 发送</button>
+      <p id="formStatus"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p><i class="fas fa-phone"></i> WhatsApp: <a href="https://wa.me/601112686880">+60 11-1268 6880</a> |
+    📧 Email: <a href="mailto:easycreatedesign2025@gmail.com">easycreatedesign2025@gmail.com</a></p>
+    <p>版权所有 © 2025 EasyCreate</p>
+  </footer>
+
+  <script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbysIeKDTj40AY-WOdbxStK2c3aD-v_--yimbHdYFULV8zQH3SwahyNis59-ds_vxUI0-Q/exec
+";
+    const form = document.getElementById("contact-form");
+    const status = document.getElementById("formStatus");
+
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      fetch(scriptURL, {
+        method: 'POST',
+        body: new FormData(form)
+      })
+      .then(response => {
+        status.innerText = "Submitted successfully! 提交成功！";
+        form.reset();
+      })
+      .catch(error => {
+        status.innerText = "Submission failed. Please try again.";
+      });
+    });
+  </script>
+</body>
+</html>
