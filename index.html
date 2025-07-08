@@ -6,33 +6,49 @@
   <meta name="description" content="EasyCreate - Logo and GIF Design Services">
   <title>EasyCreate | Logo & GIF Design</title>
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {
+     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
     body {
       font-family: 'Inter', sans-serif;
-      background: #f5f7fa;
+      background: #f5efe1;
       color: #222;
-      line-height: 1.6;
+      line-height: 1.8;
     }
     header {
-      background: #fff;
-      padding: 20px;
+      background: #f5efe1;
+      padding: 10px 20px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
     }
-    .logo {
-      font-size: 32px;
-      font-weight: 700;
-      color: #00bfa6;
+    .logo-img123 {
+      height: 40px;
+      width: auto;
+      border: 2px solid #00ffcc;
+      border-radius: 8px;
+      box-shadow: 0 0 8px #00ffcc, 0 0 12px #00ffcc;
     }
-    .logo span {
+    .logo-text123 {
       font-size: 28px;
-      color: #444;
+      font-weight: 900;
+    }
+    .logo-text123 span:first-child {
+      color: white;
+      background-color: #00bfa6;
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin-right: 4px;
+    }
+    .logo-text123 span:last-child {
+      color: #000;
     }
     .hero {
       padding: 60px 20px;
@@ -41,55 +57,135 @@
       color: white;
     }
     .hero h1 {
-      font-size: 42px;
-      margin-bottom: 20px;
+      font-size: 46px;
+      margin-bottom: 25px;
+      font-weight: 900;
     }
     .hero p {
-      font-size: 18px;
+      font-size: 20px;
       margin-bottom: 30px;
+      font-weight: 600;
     }
     .hero a {
       background: white;
       color: #00bfa6;
-      padding: 12px 25px;
-      border-radius: 5px;
+      padding: 14px 28px;
+      border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
       transition: background 0.3s ease;
+      font-size: 16px;
     }
     .hero a:hover {
       background: #f0f0f0;
     }
-    .services {
+    .services, .aboutus, .links123, .carousel-section {
       padding: 60px 20px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 30px;
-      background: #fff;
+      background: #f5efe1;
     }
-    .service-box {
-      background: #fefefe;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-      width: 280px;
+    .service-box, .info-box123 {
+      background: #f5efe1;
+      padding: 40px;
+      border-radius: 12px;
+      border: 3px solid #000;
+      box-shadow: 6px 6px 15px rgba(0,0,0,0.15);
+      width: 360px;
+      max-width: 95vw;
       text-align: center;
     }
-    .service-box h3 {
-      font-size: 22px;
+    .service-box h3, .info-box123 h3 {
+      font-size: 24px;
       color: #00bfa6;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
+      font-weight: 800;
     }
-    .service-box p {
-      font-size: 15px;
-      color: #555;
+    .service-box h3 i, .info-box123 h3 i, .carousel-section h2 i, .links123 h3 i {
+      margin-right: 8px;
+      animation: bounce 2s infinite;
+    }
+    .service-box p, .info-box123 p {
+      font-size: 17px;
+      color: #222;
+      font-weight: 600;
+    }
+    .service-img-placeholder {
+      width: 100%;
+      height: 180px;
+      background: #ddd;
+      margin: 20px 0;
+      border-radius: 10px;
+    }
+    .carousel-section {
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+    }
+    .carousel-section h2 {
+      font-size: 28px;
+      color: #00bfa6;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+    .carousel-wrapper {
+      display: flex;
+      gap: 16px;
+      padding: 10px 0;
+      animation: scroll-left 20s linear infinite;
+    }
+    @keyframes scroll-left {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .carousel-item {
+      min-width: 250px;
+      height: 180px;
+      background: #ccc;
+      border-radius: 12px;
+      flex-shrink: 0;
+      box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+      border: 2px solid #000;
+    }
+    .whatsapp-button {
+      background-color: #25D366;
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+      border: none;
+      padding: 20px 40px;
+      border-radius: 50px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 60px auto;
+      width: fit-content;
+      box-shadow: 0 0 12px rgba(0,0,0,0.2);
+      cursor: pointer;
+      text-decoration: none;
+      animation: pulse 2s infinite;
+    }
+    .whatsapp-button i {
+      margin-right: 12px;
+      font-size: 26px;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
     }
     footer {
       text-align: center;
       padding: 20px;
-      font-size: 14px;
-      background: #fafafa;
+      font-size: 15px;
+      background: #f5efe1;
       color: #999;
     }
     @media (max-width: 768px) {
@@ -99,33 +195,90 @@
       .hero p {
         font-size: 16px;
       }
+      .service-box, .info-box123 {
+        width: 100%;
+        padding: 25px;
+      }
+      .carousel-item {
+        min-width: 180px;
+        height: 140px;
+      }
+      .carousel-wrapper {
+        gap: 12px;
+      }
+      .whatsapp-button {
+        font-size: 18px;
+        padding: 16px 30px;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo">✨ Easy<span>Create</span></div>
+    <img src="https://storage.perfectcdn.com/ijhexb/nr774oxwudzm29du.jpg" alt="EasyCreate Logo" class="logo-img123">
+    <div class="logo-text123"><span>Easy</span><span>Create ✨</span></div>
   </header>
 
   <section class="hero">
-    <h1>Designs That Make You Shine</h1>
-    <p>Professional logos and GIFs for creators, businesses, and brands</p>
-    <a href="contact.html">Start Your Design</a>
+    <h1>Designs That Make You Shine<br>設計點亮你的品牌</h1>
+    <p>Professional logos and GIFs for creators, businesses, and brands<br>專業標誌與動畫設計服務</p>
+    <a href="contact.html"><i class="fas fa-pen-nib"></i> Start Your Design 開始設計</a>
   </section>
 
   <section class="services">
     <div class="service-box">
-      <h3>Logo Design</h3>
-      <p>Custom logo creation tailored to your brand identity and vibe.</p>
+      <div class="service-img-placeholder"></div>
+      <h3><i class="fas fa-palette"></i> Logo Design 標誌設計</h3>
+      <p>Custom logo creation tailored to your brand identity and vibe.<br>根據您的品牌形象量身打造獨一無二的標誌。</p>
     </div>
     <div class="service-box">
-      <h3>GIF Design</h3>
-      <p>Animated GIFs for websites, social media, marketing, and more.</p>
+      <div class="service-img-placeholder"></div>
+      <h3><i class="fas fa-film"></i> GIF Design 動圖設計</h3>
+      <p>Animated GIFs for websites, social media, marketing, and more.<br>為網站、社群平台及行銷活動製作生動的GIF動畫。</p>
+    </div>
+  </section>
+
+  <section class="carousel-section">
+    <h2><i class="fas fa-images"></i> Sample Works 設計範例</h2>
+    <div class="carousel-wrapper">
+      <div class="carousel-item"></div>
+      <div class="carousel-item"></div>
+      <div class="carousel-item"></div>
+      <div class="carousel-item"></div>
+      <div class="carousel-item"></div>
+      <div class="carousel-item"></div>
+    </div>
+  </section>
+
+  <section class="aboutus">
+    <div class="info-box123">
+      <div class="service-img-placeholder"></div>
+      <h3><i class="fas fa-user-friends"></i> About Us 關於我們</h3>
+      <p>We are passionate designers dedicated to delivering clean, creative, and impactful visuals for your brand.<br>我們是一群熱愛設計的創作者，致力於為您的品牌打造乾淨、創意且具影響力的視覺作品。</p>
+    </div>
+    <div class="info-box123">
+      <div class="service-img-placeholder"></div>
+      <h3><i class="fas fa-bullseye"></i> Our Mission 我們的使命</h3>
+      <p>To make high-quality design accessible and affordable for individuals, creators, and startups.<br>讓每個人、創作者與新創企業都能享有高品質的設計。</p>
+    </div>
+  </section>
+
+  <a class="whatsapp-button" href="https://wa.me/601112686880" target="_blank">
+    <i class="fab fa-whatsapp"></i> Contact Us for Quotation 聯絡我們報價
+  </a>
+
+  <section class="links123">
+    <div class="info-box123">
+      <h3><i class="fas fa-compass"></i> Explore More 探索更多</h3>
+      <p><a href="about.html"><i class="fas fa-info-circle"></i> About Us 關於我們</a></p>
+      <p><a href="services.html"><i class="fas fa-cogs"></i> Our Services 我們的服務</a></p>
+      <p><a href="contact.html"><i class="fas fa-envelope"></i> Contact 聯絡我們</a></p>
+      <p><a href="terms.html"><i class="fas fa-file-contract"></i> Terms & Refund 條款與退款</a></p>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 EasyCreate. All rights reserved.
+    &copy; 2025 EasyCreate. All rights reserved.<br>版權所有 &copy; 2025 EasyCreate
   </footer>
 </body>
 </html>
