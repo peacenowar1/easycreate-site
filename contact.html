@@ -8,11 +8,12 @@
   <style>
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
       font-family: 'Segoe UI', sans-serif;
-      margin: 0;
       background-color: #f5efe1;
       color: #222;
       line-height: 1.8;
@@ -32,28 +33,26 @@
       gap: 12px;
     }
 
-    .logo-img123 {
+    .logo-img {
       height: 40px;
-      width: auto;
+      border-radius: 6px;
       border: 2px solid #00ffcc;
-      border-radius: 8px;
-      box-shadow: 0 0 8px #00ffcc, 0 0 12px #00ffcc;
+      box-shadow: 0 0 8px #00ffcc;
     }
 
-    .logo-text123 {
-      font-size: 28px;
+    .logo-text {
+      font-size: 30px;
       font-weight: 900;
     }
 
-    .logo-text123 span:first-child {
-      color: white;
+    .logo-text span:first-child {
       background-color: #00bfa6;
+      color: white;
       padding: 2px 8px;
       border-radius: 4px;
-      margin-right: 4px;
     }
 
-    .logo-text123 span:last-child {
+    .logo-text span:last-child {
       color: #000;
     }
 
@@ -235,8 +234,8 @@
     }
 
     @media (max-width: 768px) {
-      .logo-text123 {
-        font-size: 22px;
+      .logo-text {
+        font-size: 24px;
       }
       .contact-hero888 h1 {
         font-size: 26px;
@@ -256,11 +255,12 @@
   </style>
 </head>
 <body>
+
 <header>
   <a href="index.html" style="text-decoration: none; color: inherit;">
     <div class="logo-wrap">
-      <img class="logo-img123" src="https://storage.perfectcdn.com/ijhexb/nr774oxwudzm29du.jpg" alt="EasyCreate Logo">
-      <div class="logo-text123">
+      <img class="logo-img" src="https://storage.perfectcdn.com/ijhexb/nr774oxwudzm29du.jpg" alt="EasyCreate Logo">
+      <div class="logo-text">
         <span>Easy</span><span>Create ✨</span>
       </div>
     </div>
@@ -340,5 +340,6 @@
       });
   });
 </script>
+
 </body>
 </html>
