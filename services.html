@@ -7,173 +7,180 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background-color: #f5efe1;
-      color: #222;
-      line-height: 1.8;
-    }
-    header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-      padding: 20px;
-      background-color: #f5efe1;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-  .logo-wrap {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f5efe1;
+  color: #222;
+  line-height: 1.8;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 20px;
+  background-color: #f5efe1;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.logo-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
 }
+
 .logo-img {
   height: 40px;
   border-radius: 6px;
   border: 2px solid #00ffcc;
   box-shadow: 0 0 8px #00ffcc;
 }
+
 .logo-text {
   font-size: 30px;
   font-weight: 900;
 }
+
 .logo-text span:first-child {
   background-color: #00bfa6;
   color: white;
   padding: 2px 8px;
   border-radius: 4px;
 }
+
 .logo-text span:last-child {
   color: #000;
 }
-@media (max-width: 768px) {
-  .logo-text {
-    font-size: 24px;
-  }
+
+.services-page {
+  padding: 50px 20px;
 }
 
-    .services-page {
-      padding: 50px 20px;
-    }
-    .service-section {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 40px;
-      margin: 0 auto 60px;
-      max-width: 1200px;
-    }
-    .service-card {
-      background: #fff;
-      border: 3px solid #000;
-      border-radius: 12px;
-      max-width: 480px;
-      width: 100%;
-      box-shadow: 8px 8px 15px rgba(0,0,0,0.2);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 30px;
-      text-align: center;
-    }
-    .service-card img {
-      width: 100%;
-      max-width: 320px;
-      height: auto;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-    .service-card h2 {
-      font-size: 24px;
-      color: #00bfa6;
-      font-weight: 900;
-      margin-bottom: 15px;
-    }
-    .service-card h2 i {
-      margin-right: 6px;
-      animation: bounce 2s infinite;
-    }
-    .service-card p, .service-card li {
-      font-size: 18px;
-      font-weight: 600;
-      color: #333;
-    }
-    .service-card .price {
-      margin-top: 12px;
-      font-size: 16px;
-      color: #555;
-      font-weight: 600;
-    }
-    .footer {
-      text-align: center;
-      font-size: 15px;
-      padding: 20px;
-      background: #f5efe1;
-      color: #777;
-      margin-top: 60px;
-    }
-    .footer i {
-      animation: bounce 2s infinite;
-    }
+.service-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin: 0 auto 60px;
+  max-width: 1200px;
+}
 
-    .services-header123-green {
-      text-align: center;
-      padding: 50px 20px 40px;
-      background-color: #00bfa6;
-      color: white;
-    }
-    .services-header123-green h1 {
-      font-size: 38px;
-      font-weight: 900;
-      margin-bottom: 25px;
-    }
-    .services-header123-green h1 i {
-      margin-right: 10px;
-      animation: bounce 2s infinite;
-    }
-    .whatsapp-btn123-white {
-      display: inline-block;
-      background-color: white;
-      color: #00bfa6;
-      font-size: 20px;
-      font-weight: bold;
-      padding: 16px 28px;
-      border-radius: 50px;
-      text-decoration: none;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
-      animation: pulse 2s infinite;
-      line-height: 1.4;
-    }
-    .whatsapp-btn123-white i {
-      margin-right: 10px;
-      font-size: 22px;
-      color: #00bfa6;
-    }
+.service-card {
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 12px;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 8px 8px 15px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+}
 
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
-    }
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-6px); }
-    }
+.service-card img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
 
-         .service-card {
-        padding: 20px;
-        margin: 0 12px;
-      }
-      .services-header123-green h1 {
-        font-size: 26px;
-      }
-      .whatsapp-btn123-white {
-        font-size: 16px;
-        padding: 14px 22px;
-      }
-    }
+.service-card h2 {
+  font-size: 24px;
+  color: #00bfa6;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.service-card h2 i {
+  margin-right: 6px;
+  animation: bounce 2s infinite;
+}
+
+.service-card p,
+.service-card li {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.service-card .price {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #555;
+  font-weight: 600;
+}
+
+.services-header123-green {
+  text-align: center;
+  padding: 50px 20px 40px;
+  background-color: #00bfa6;
+  color: white;
+}
+
+.services-header123-green h1 {
+  font-size: 38px;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+
+.services-header123-green h1 i {
+  margin-right: 10px;
+  animation: bounce 2s infinite;
+}
+
+.whatsapp-btn123-white {
+  display: inline-block;
+  background-color: white;
+  color: #00bfa6;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 16px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  animation: pulse 2s infinite;
+  line-height: 1.4;
+}
+
+.whatsapp-btn123-white i {
+  margin-right: 10px;
+  font-size: 22px;
+  color: #00bfa6;
+}
+
+.footer {
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  background: #f5efe1;
+  color: #777;
+  margin-top: 60px;
+}
+
+.footer i {
+  animation: bounce 2s infinite;
+}
+
+.footer-links888 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.footer-links888 a {
+  color: #00bfa6;
+  text-decoration: none;
+  margin: 0 6px;
+}
+
+.footer-links888 a:hover {
+  text-decoration: underline;
+}
 
 .main-nav888 {
   display: flex;
@@ -199,25 +206,36 @@
   text-decoration: underline;
 }
 
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
 @media (max-width: 768px) {
+  .logo-text {
+    font-size: 24px;
+  }
+  .service-card {
+    padding: 20px;
+    margin: 0 12px;
+  }
+  .services-header123-green h1 {
+    font-size: 26px;
+  }
+  .whatsapp-btn123-white {
+    font-size: 16px;
+    padding: 14px 22px;
+  }
   .main-nav888 a {
     font-size: 14px;
     padding: 4px 8px;
   }
-}
-
-
-.footer-links888 {
-  font-size: 14px;
-  margin-bottom: 8px;
-}
-.footer-links888 a {
-  color: #00bfa6;
-  text-decoration: none;
-  margin: 0 6px;
-}
-.footer-links888 a:hover {
-  text-decoration: underline;
 }
 
     
