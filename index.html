@@ -1,86 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="EasyCreate - Logo and GIF Design Services">
   <title>EasyCreate | Logo & GIF Design</title>
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
+     * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f5efe1;
+      font-family: 'Inter', sans-serif;
+      background: #f5efe1;
       color: #222;
       line-height: 1.8;
     }
-
     header {
-      background-color: #f5efe1;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .logo-wrap {
+      background: #f5efe1;
+      padding: 10px 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       gap: 12px;
     }
-    .logo-img {
+    .logo-img123 {
       height: 40px;
-      border-radius: 6px;
+      width: auto;
       border: 2px solid #00ffcc;
-      box-shadow: 0 0 8px #00ffcc;
+      border-radius: 8px;
+      box-shadow: 0 0 8px #00ffcc, 0 0 12px #00ffcc;
     }
-    .logo-text {
-      font-size: 30px;
+    .logo-text123 {
+      font-size: 28px;
       font-weight: 900;
     }
-    .logo-text span:first-child {
-      background-color: #00bfa6;
+    .logo-text123 span:first-child {
       color: white;
+      background-color: #00bfa6;
       padding: 2px 8px;
       border-radius: 4px;
+      margin-right: 4px;
     }
-    .logo-text span:last-child {
+    .logo-text123 span:last-child {
       color: #000;
     }
-
-    @media (max-width: 768px) {
-      .logo-text {
-        font-size: 24px;
-      }
-    }
-
-    .main-nav888 {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      background-color: #e0f5f2;
-      padding: 10px;
-      font-weight: bold;
-      gap: 10px;
-    }
-    .main-nav888 a {
-      color: #00bfa6;
-      text-decoration: none;
-      transition: 0.3s;
-      font-size: 16px;
-      padding: 6px 10px;
-    }
-    .main-nav888 a:hover {
-      color: #01907d;
-      text-decoration: underline;
-    }
-    @media (max-width: 768px) {
-      .main-nav888 a { font-size: 14px; padding: 4px 8px; }
-    }
-
     .hero {
       padding: 60px 20px;
       text-align: center;
@@ -110,79 +83,424 @@
     .hero a:hover {
       background: #f0f0f0;
     }
-
-    .cta-buttons123 {
+    .services, .aboutus, .links123, .carousel-section {
+      padding: 60px 20px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 15px;
-      margin-top: 30px;
+      gap: 30px;
+      background: #f5efe1;
     }
-    .cta-buttons123 a {
-      background: #00bfa6;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      padding: 14px 28px;
-      border-radius: 8px;
-      text-decoration: none;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      transition: all 0.3s ease;
-      display: flex;
-      align-items: center;
+    .service-box, .info-box123 {
+      background: #f5efe1;
+      padding: 40px;
+      border-radius: 12px;
+      border: 3px solid #000;
+      box-shadow: 6px 6px 15px rgba(0,0,0,0.15);
+      width: 360px;
+      max-width: 95vw;
+      text-align: center;
     }
-    .cta-buttons123 a i {
+    .service-box h3, .info-box123 h3 {
+      font-size: 24px;
+      color: #00bfa6;
+      margin-bottom: 15px;
+      font-weight: 800;
+    }
+    .service-box h3 i, .info-box123 h3 i, .carousel-section h2 i, .links123 h3 i {
       margin-right: 8px;
       animation: bounce 2s infinite;
     }
-    .cta-buttons123 a:hover {
-      background: #009e88;
+    .service-box p, .info-box123 p {
+      font-size: 17px;
+      color: #222;
+      font-weight: 600;
     }
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 26px; line-height: 1.4; }
-      .hero p { font-size: 15px; }
-      .cta-buttons123 {
-        flex-direction: column;
-        align-items: center;
-      }
-      .cta-buttons123 a {
-        width: 90vw;
-        max-width: 320px;
-        font-size: 14px;
-        padding: 16px 20px;
-        text-align: center;
-      }
-    }
+   .service-img-placeholder {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 15px;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 2px solid #333;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
 
+.service-img-placeholder img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+    .carousel-section {
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+    }
+    .carousel-section h2 {
+      font-size: 28px;
+      color: #00bfa6;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+    .carousel-container {
+      width: 100%;
+      max-width: 1200px;
+      overflow: hidden;
+    }
+    .carousel-wrapper {
+      display: flex;
+      gap: 16px;
+      padding: 10px 0;
+      width: fit-content;
+      animation: scroll-left 40s linear infinite;
+    }
+    @keyframes scroll-left {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .carousel-item {
+  width: 180px;
+  height: 180px;
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 2px solid #000;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+   .whatsapp-button {
+  background-color: #25D366;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  padding: 25px 30px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 60px auto;
+  width: fit-content;
+  box-shadow: 0 0 12px rgba(0,0,0,0.2);
+  cursor: pointer;
+  text-decoration: none;
+  animation: pulse 2s infinite;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.whatsapp-button i {
+  font-size: 36px;
+}
+
+.whatsapp-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-button {
+    font-size: 16px;
+    padding: 18px 20px;
+    gap: 10px;
+  }
+
+  .whatsapp-button i {
+    font-size: 30px;
+  }
+
+  .whatsapp-text {
+    font-size: 16px;
+  }
+}
+
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
     @keyframes bounce {
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-6px); }
     }
-
-    .footer-links888 {
-      font-size: 14px;
-      margin-bottom: 8px;
-    }
-    .footer-links888 a {
-      color: #00bfa6;
-      text-decoration: none;
-      margin: 0 6px;
-    }
-    .footer-links888 a:hover {
-      text-decoration: underline;
-    }
-
     footer {
       text-align: center;
-      padding: 25px;
+      padding: 20px;
+      font-size: 15px;
       background: #f5efe1;
-      color: #777;
+      color: #999;
     }
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+      .hero p {
+        font-size: 16px;
+      }
+      .service-box, .info-box123 {
+        width: 100%;
+        padding: 25px;
+      }
+      .carousel-item {
+        min-width: 180px;
+        height: 140px;
+      }
+      .carousel-wrapper {
+        gap: 12px;
+      }
+      .whatsapp-button {
+        font-size: 18px;
+        padding: 16px 30px;
+      }
+    }
+
+ .emailtext888 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 15px;
+  color: #333;
+}
+.emailtext888 a {
+  color: #00bfa6;
+  text-decoration: underline;
+  word-break: break-word;
+}
+@media (max-width: 768px) {
+  .emailtext888 {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+}
+    
+    
+    .whatsapp-subtext {
+  text-align: center;
+  margin-top: -10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #25D366;
+}
+@media (max-width: 768px) {
+  .whatsapp-subtext {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+}
+    
+   .gif-banner-section123 {
+  width: 100%;
+  background: #000; /* Black outer background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.gif-banner-img123 {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border: 3px solid #000;
+  border-radius: 10px;
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
+}
+
+.cta-buttons123 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.cta-buttons123 a {
+  background: #00bfa6;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.cta-buttons123 a i {
+  margin-right: 8px;
+  animation: bounce 2s infinite;
+}
+
+.cta-buttons123 a:hover {
+  background: #009e88;
+}
+
+/* Mobile: stack the buttons vertically */
+@media (max-width: 768px) {
+  .cta-buttons123 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons123 a {
+    width: 90vw; /* Increased width for better mobile fit */
+    max-width: 320px;
+    font-size: 16px;
+    padding: 16px 20px;
+    text-align: center;
+  }
+}
+.main-nav888 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0f5f2;
+  padding: 10px;
+  font-weight: bold;
+  gap: 10px;
+}
+
+.main-nav888 a {
+  color: #00bfa6;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 16px;
+  padding: 6px 10px;
+}
+
+.main-nav888 a:hover {
+  color: #01907d;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .main-nav888 a {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+}
+
+
+.footer-links888 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.footer-links888 a {
+  color: #00bfa6;
+  text-decoration: none;
+  margin: 0 6px;
+}
+.footer-links888 a:hover {
+  text-decoration: underline;
+}
+    
+    @media (max-width: 768px) {
+  .carousel-section h2 {
+    font-size: 20px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-section h2,
+  .service-box h3,
+  .info-box123 h3,
+  .links123 h3 {
+    font-size: 20px;
+    white-space: nowrap;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+    line-height: 1.4;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .logo-text123 {
+    font-size: 22px;
+  }
+
+  .cta-buttons123 a {
+    font-size: 14px;
+  }
+
+  .service-box p,
+  .info-box123 p {
+    font-size: 14px;
+  }
+
+  .emailtext888 {
+    font-size: 13px;
+  }
+
+  .footer-links888 {
+    font-size: 12px;
+  }
+}
+    
+    .links123 i {
+  color: #00bfa6;
+  margin-right: 6px;
+  animation: bounce 2s infinite;
+}
+.links123 a {
+  color: #222;
+  font-weight: bold;
+  text-decoration: none;
+}
+.links123 a:hover {
+  color: #00bfa6;
+  text-decoration: underline;
+}
+
+    @media (max-width: 768px) {
+  .links123 h3 {
+    font-size: 22px;
+    line-height: 1.4;
+    white-space: nowrap;
+  }
+}
+    
+    .links123 .info-box123 {
+  width: 500px;
+  max-width: 95vw;
+}
+
+    
+    @media (max-width: 768px) {
+  .links123 .info-box123 {
+    width: 90vw;
+    padding: 30px 20px;
+  }
+}
+
+
+
   </style>
 </head>
 <body>
-
- <header>
+  <header>
     <img src="https://storage.perfectcdn.com/ijhexb/nr774oxwudzm29du.jpg" alt="EasyCreate Logo" class="logo-img123">
     <div class="logo-text123"><span>Easy</span><span>Create ✨</span></div>
   </header>
@@ -296,5 +614,6 @@
   📧 Email: <a href="mailto:easycreatedesign2025@gmail.com">easycreatedesign2025@gmail.com</a></p>
   <p>版权所有 © 2025 EasyCreate</p>
 </footer>
+
 </body>
 </html>
