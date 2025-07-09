@@ -23,37 +23,36 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       text-align: center;
     }
-    .logo-wrap123 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      width: 100%;
-      margin: 0 auto;
-    }
-    .logo-img123 {
-      height: 40px;
-      width: auto;
-      border-radius: 6px;
-      border: 2px solid #00ffcc;
-      box-shadow: 0 0 8px #00ffcc;
-    }
-    .logo-text123 {
-      font-size: 32px;
-      font-weight: 900;
-      display: flex;
-      align-items: center;
-    }
-    .logo-text123 span:first-child {
-      color: white;
-      background-color: #00bfa6;
-      padding: 2px 8px;
-      border-radius: 4px;
-      margin-right: 4px;
-    }
-    .logo-text123 span:last-child {
-      color: #000;
-    }
+  .logo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.logo-img {
+  height: 40px;
+  border-radius: 6px;
+  border: 2px solid #00ffcc;
+  box-shadow: 0 0 8px #00ffcc;
+}
+.logo-text {
+  font-size: 30px;
+  font-weight: 900;
+}
+.logo-text span:first-child {
+  background-color: #00bfa6;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+.logo-text span:last-child {
+  color: #000;
+}
+@media (max-width: 768px) {
+  .logo-text {
+    font-size: 24px;
+  }
+}
 
     .services-page {
       padding: 50px 20px;
@@ -163,14 +162,7 @@
       50% { transform: translateY(-6px); }
     }
 
-    @media (max-width: 768px) {
-      .logo-img123 {
-        height: 28px;
-      }
-      .logo-text123 {
-        font-size: 24px;
-      }
-      .service-card {
+         .service-card {
         padding: 20px;
         margin: 0 12px;
       }
@@ -234,14 +226,15 @@
 <body>
 <header>
   <a href="index.html" style="text-decoration: none; color: inherit;">
-    <div class="logo-wrap123">
-      <img class="logo-img123" src="https://storage.perfectcdn.com/ijhexb/nr774oxwudzm29du.jpg" alt="EasyCreate Logo">
-      <div class="logo-text123">
+    <div class="logo-wrap">
+      <img class="logo-img" src="https://storage.perfectcdn.com/ijhexb/nr774oxwudzm29du.jpg" alt="EasyCreate Logo">
+      <div class="logo-text">
         <span>Easy</span><span>Create ✨</span>
       </div>
     </div>
   </a>
 </header>
+
 
 
   <nav class="main-nav888">
@@ -359,5 +352,3 @@
 
 </body>
 </html>
-
-
