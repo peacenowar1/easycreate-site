@@ -13,61 +13,93 @@
       color: #222;
       line-height: 1.8;
     }
+
     header {
       background-color: #f5efe1;
       padding: 20px;
       text-align: center;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
+
     .logo-wrap {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 12px;
     }
+
     .logo-img {
       height: 40px;
       border-radius: 6px;
       border: 2px solid #00ffcc;
       box-shadow: 0 0 8px #00ffcc;
     }
+
     .logo-text {
       font-size: 30px;
       font-weight: 900;
     }
+
     .logo-text span:first-child {
       background-color: #00bfa6;
       color: white;
       padding: 2px 8px;
       border-radius: 4px;
     }
+
     .logo-text span:last-child {
       color: #000;
     }
 
-    .about-header {
+    .main-nav888 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      background-color: #e0f5f2;
+      padding: 10px;
+      font-weight: bold;
+      gap: 10px;
+    }
+
+    .main-nav888 a {
+      color: #00bfa6;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 16px;
+      padding: 6px 10px;
+    }
+
+    .main-nav888 a:hover {
+      color: #01907d;
+      text-decoration: underline;
+    }
+
+    .about-hero888 {
       background-color: #00bfa6;
       color: white;
       padding: 60px 20px 40px;
       text-align: center;
     }
-    .about-header h1 {
+
+    .about-hero888 h1 {
       font-size: 36px;
       font-weight: 900;
     }
-    .about-header h1 i {
+
+    .about-hero888 h1 i {
       margin-right: 10px;
       animation: bounce 2s infinite;
     }
 
-    .about-content {
+    .about-info888 {
       max-width: 960px;
       margin: 0 auto;
       padding: 40px 20px;
       text-align: center;
     }
 
-    .about-content img {
+    .about-info888 img {
       width: 100%;
       max-width: 500px;
       border-radius: 12px;
@@ -75,7 +107,7 @@
       box-shadow: 6px 6px 15px rgba(0,0,0,0.1);
     }
 
-    .about-content p {
+    .about-info888 p {
       font-size: 20px;
       font-weight: 500;
       margin-bottom: 30px;
@@ -90,96 +122,71 @@
       margin-top: 60px;
     }
 
+    .footer-links888 {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .footer-links888 a {
+      color: #00bfa6;
+      text-decoration: none;
+      margin: 0 6px;
+    }
+
+    .footer-links888 a:hover {
+      text-decoration: underline;
+    }
+
     @keyframes bounce {
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-6px); }
     }
 
     @media (max-width: 768px) {
-      .about-header h1 {
-        font-size: 26px;
-      }
       .logo-text {
         font-size: 24px;
       }
-      .about-content p {
+
+      .main-nav888 a {
+        font-size: 14px;
+        padding: 4px 8px;
+      }
+
+      .about-hero888 h1 {
+        font-size: 26px;
+      }
+
+      .about-info888 p {
         font-size: 16px;
       }
     }
-
-.main-nav888 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  background-color: #e0f5f2;
-  padding: 10px;
-  font-weight: bold;
-  gap: 10px;
-}
-
-.main-nav888 a {
-  color: #00bfa6;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 16px;
-  padding: 6px 10px;
-}
-
-.main-nav888 a:hover {
-  color: #01907d;
-  text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-  .main-nav888 a {
-    font-size: 14px;
-    padding: 4px 8px;
-  }
-}
-
-
-.footer-links888 {
-  font-size: 14px;
-  margin-bottom: 8px;
-}
-.footer-links888 a {
-  color: #00bfa6;
-  text-decoration: none;
-  margin: 0 6px;
-}
-.footer-links888 a:hover {
-  text-decoration: underline;
-}
-
   </style>
 </head>
 <body>
   <header>
-  <a href="index.html" style="text-decoration: none; color: inherit;">
-    <div class="logo-wrap">
-      <img class="logo-img" src="https://storage.perfectcdn.com/ijhexb/nr774oxwudzm29du.jpg" alt="EasyCreate Logo">
-      <div class="logo-text">
-        <span>Easy</span><span>Create ✨</span>
+    <a href="index.html" style="text-decoration: none; color: inherit;">
+      <div class="logo-wrap">
+        <img class="logo-img" src="https://storage.perfectcdn.com/ijhexb/nr774oxwudzm29du.jpg" alt="EasyCreate Logo">
+        <div class="logo-text">
+          <span>Easy</span><span>Create ✨</span>
+        </div>
       </div>
-    </div>
-  </a>
-</header>
+    </a>
+  </header>
 
   <nav class="main-nav888">
-  <a href="index.html">Home / 首页</a>
-  <a href="about.html">About / 关于我们</a>
-  <a href="services.html">Services / 服务</a>
-  <a href="contact.html">Contact / 联系方式</a>
-  <a href="terms.html">Terms / 条款</a>
-</nav>
+    <a href="index.html">Home / 首页</a>
+    <a href="about.html">About / 关于我们</a>
+    <a href="services.html">Services / 服务</a>
+    <a href="contact.html">Contact / 联系方式</a>
+    <a href="terms.html">Terms / 条款</a>
+  </nav>
 
-
-  <section class="about-header">
+  <section class="about-hero888">
     <h1><i class="fas fa-users"></i> About Us / 关于我们</h1>
   </section>
 
-  <section class="about-content">
+  <section class="about-info888">
     <p>
       EasyCreate is your creative partner for logos, GIFs, visuals, and more. We blend aesthetic excellence with strategic design to help your brand stand out. Whether you're a startup or a big brand — we tailor each design with purpose.
       <br><br>
@@ -198,17 +205,16 @@
   </section>
 
   <footer>
-  <div class="footer-links888">
-    <a href="index.html">Home / 首页</a> |
-    <a href="about.html">About / 关于我们</a> |
-    <a href="services.html">Services / 服务</a> |
-    <a href="contact.html">Contact / 联系方式</a> |
-    <a href="terms.html">Terms / 条款</a>
-  </div>
-  <p><i class="fas fa-phone"></i> WhatsApp: <a href="https://wa.me/601112686880">+60 11-1268 6880</a> |
-  📧 Email: <a href="mailto:easycreatedesign2025@gmail.com">easycreatedesign2025@gmail.com</a></p>
-  <p>版权所有 © 2025 EasyCreate</p>
-</footer>
-
+    <div class="footer-links888">
+      <a href="index.html">Home / 首页</a> |
+      <a href="about.html">About / 关于我们</a> |
+      <a href="services.html">Services / 服务</a> |
+      <a href="contact.html">Contact / 联系方式</a> |
+      <a href="terms.html">Terms / 条款</a>
+    </div>
+    <p><i class="fas fa-phone"></i> WhatsApp: <a href="https://wa.me/601112686880">+60 11-1268 6880</a> |
+    📧 Email: <a href="mailto:easycreatedesign2025@gmail.com">easycreatedesign2025@gmail.com</a></p>
+    <p>版权所有 © 2025 EasyCreate</p>
+  </footer>
 </body>
 </html>
