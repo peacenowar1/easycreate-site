@@ -159,12 +159,33 @@
       margin-bottom: 20px;
     }
 
-    iframe {
+    form[name="easycreate-form"] input,
+    form[name="easycreate-form"] textarea {
       width: 100%;
-      height: 750px;
-      border-radius: 12px;
-      border: 2px solid #00bfa6;
-      box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+      padding: 12px;
+      margin-bottom: 16px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    form[name="easycreate-form"] button {
+      width: 100%;
+      background: #00bfa6;
+      color: #fff;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .form-status888 {
+      text-align: center;
+      margin-top: 10px;
+      color: #333;
+      font-weight: 600;
     }
 
     @media (max-width: 768px) {
@@ -181,92 +202,61 @@
         font-size: 16px;
         padding: 12px 20px;
       }
-      iframe {
-        height: 850px;
-      }
     }
-    
-  .google-form-wrapper {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-}
 
-.google-form-wrapper iframe {
-  width: 100%;
-  height: 750px;
-  border-radius: 12px;
-  border: 2px solid #00bfa6;
-  box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
-}
+    .main-nav888 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      background-color: #e0f5f2;
+      padding: 10px;
+      font-weight: bold;
+      gap: 10px;
+    }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .google-form-wrapper {
-    width: 100%;
-  }
+    .main-nav888 a {
+      color: #00bfa6;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 16px;
+      padding: 6px 10px;
+    }
 
-  .google-form-wrapper iframe {
-    height: 850px;
-  }
-}
+    .main-nav888 a:hover {
+      color: #01907d;
+      text-decoration: underline;
+    }
 
     @media (max-width: 768px) {
-  .contact-form-section {
-    margin: 20px 5%;
-  }
-}
+      .main-nav888 a {
+        font-size: 14px;
+        padding: 4px 8px;
+      }
+    }
 
-   .main-nav888 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  background-color: #e0f5f2;
-  padding: 10px;
-  font-weight: bold;
-  gap: 10px;
-}
-
-.main-nav888 a {
-  color: #00bfa6;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 16px;
-  padding: 6px 10px;
-}
-
-.main-nav888 a:hover {
-  color: #01907d;
-  text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-  .main-nav888 a {
-    font-size: 14px;
-    padding: 4px 8px;
-  }
-}
-
-
-.footer-links888 {
-  font-size: 14px;
-  margin-bottom: 8px;
-}
-.footer-links888 a {
-  color: #00bfa6;
-  text-decoration: none;
-  margin: 0 6px;
-}
-.footer-links888 a:hover {
-  text-decoration: underline;
-}
-
+    .footer-links888 {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    .footer-links888 a {
+      color: #00bfa6;
+      text-decoration: none;
+      margin: 0 6px;
+    }
+    .footer-links888 a:hover {
+      text-decoration: underline;
+    }
     
+    @media (max-width: 768px) {
+  .contact-form-section {
+    width: 95%;
+  }
+}
   </style>
 </head>
 <body>
- <header>
+<header>
   <a href="index.html" style="text-decoration: none; color: inherit;">
     <div class="logo-wrap">
       <img class="logo-img" src="https://storage.perfectcdn.com/ijhexb/nr774oxwudzm29du.jpg" alt="EasyCreate Logo">
@@ -275,9 +265,9 @@
       </div>
     </div>
   </a>
- </header>
+</header>
 
-  <nav class="main-nav888">
+<nav class="main-nav888">
   <a href="index.html">Home / 首页</a>
   <a href="about.html">About / 关于我们</a>
   <a href="services.html">Services / 服务</a>
@@ -285,45 +275,41 @@
   <a href="terms.html">Terms / 条款</a>
 </nav>
 
+<section class="contact-header">
+  <h1><i class="fas fa-envelope-open-text"></i> Contact Us / 联系我们</h1>
+</section>
 
-  <section class="contact-header">
-    <h1><i class="fas fa-envelope-open-text"></i> Contact Us / 联系我们</h1>
-  </section>
+<section class="contact-content">
+  <img src="https://storage.perfectcdn.com/ijhexb/9tcx4ow58i6azmns.gif" alt="Contact GIF Placeholder">
+  <p>欢迎您与我们联系，告诉我们您的创意与需求，我们将协助您把品牌视觉提升到更高的层次！</p>
 
-  <section class="contact-content">
-    <img src="https://storage.perfectcdn.com/ijhexb/9tcx4ow58i6azmns.gif" alt="Contact GIF Placeholder">
-    <p>欢迎您与我们联系，告诉我们您的创意与需求，我们将协助您把品牌视觉提升到更高的层次！</p>
+  <div class="contact-links">
+    <a class="whatsapp-btn" href="https://wa.me/601112686880" target="_blank">
+      <i class="fab fa-whatsapp"></i> WhatsApp 即时报价
+    </a>
 
-    <div class="contact-links">
-      <a class="whatsapp-btn" href="https://wa.me/601112686880" target="_blank">
-        <i class="fab fa-whatsapp"></i> WhatsApp 即时报价
-      </a>
-
-      <div class="email-line">
-        📧 Email: <a href="mailto:easycreatedesign2025@gmail.com">easycreatedesign2025@gmail.com</a>
-      </div>
-
-      <div class="working-hours">
-        🕒 工作时间：每天 10:00 AM - 8:00 PM（马来西亚时间）
-      </div>
+    <div class="email-line">
+      📧 Email: <a href="mailto:easycreatedesign2025@gmail.com">easycreatedesign2025@gmail.com</a>
     </div>
-  </section>
 
- <section class="contact-form-section">
-  <h2><i class="fas fa-paper-plane"></i> Send Us a Message / 留言给我们</h2>
-  <div class="google-form-wrapper">
-    <iframe 
-      src="https://docs.google.com/forms/d/e/1FAIpQLSe4LgcHfA2KanMTRuUNs8aUz06qXjRb3RM_mxGs7jZFheX-Iw/viewform?embedded=true"
-      frameborder="0"
-      marginheight="0"
-      marginwidth="0"
-      allowfullscreen
-    ></iframe>
+    <div class="working-hours">
+      🕒 工作时间：每天 10:00 AM - 8:00 PM（马来西亚时间）
+    </div>
   </div>
 </section>
-  
-  
- <footer>
+
+<section class="contact-form-section">
+  <h2><i class="fas fa-paper-plane"></i> Send Us a Message / 留言给我们</h2>
+  <form name="easycreate-form" method="POST">
+    <input type="text" name="name" placeholder="Your Name / 您的名字" required>
+    <input type="email" name="email" placeholder="Your Email / 您的电邮" required>
+    <textarea name="message" placeholder="Your Message / 您的留言" rows="4" required></textarea>
+    <button type="submit"><i class="fas fa-check-circle"></i> Submit 提交</button>
+  </form>
+  <p class="form-status888"></p>
+</section>
+
+<footer>
   <div class="footer-links888">
     <a href="index.html">Home / 首页</a> |
     <a href="about.html">About / 关于我们</a> |
@@ -336,5 +322,28 @@
   <p>版权所有 © 2025 EasyCreate</p>
 </footer>
 
+<script>
+  const scriptURL =
+'https://script.google.com/macros/s/AKfycbyEneYBjONVYoMiQPcuweq04sHyLq5dRkF2mEOu3xpVF-TOlB-A_W5iHBFfJZJw8UxR2w/exec';
+  const form = document.forms['easycreate-form'];
+  const status = document.querySelector('.form-status888');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    status.textContent = 'Submitting... 请稍候...';
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        status.textContent = 'Submitted successfully! 成功提交！';
+        form.reset();
+      })
+      .catch(error => {
+        status.textContent = 'Submission failed. 提交失败，请重试。';
+        console.error('Error!', error.message);
+      });
+  });
+</script>
+
 </body>
 </html>
+
