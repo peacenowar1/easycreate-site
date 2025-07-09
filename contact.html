@@ -6,270 +6,251 @@
   <title>Contact Us | EasyCreate</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <style>
-   * {
-    box-sizing: border-box;
-  }
-
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    background-color: #f5efe1;
-    color: #222;
-    line-height: 1.8;
-  }
-
-  header {
-    background-color: #f5efe1;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
-
-  .logo-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .logo-img {
-    height: 40px;
-    border-radius: 6px;
-    border: 2px solid #00ffcc;
-    box-shadow: 0 0 8px #00ffcc;
-  }
-
-  .logo-text {
-    font-size: 30px;
-    font-weight: 900;
-  }
-
-  .logo-text span:first-child {
-    background-color: #00bfa6;
-    color: white;
-    padding: 2px 8px;
-    border-radius: 4px;
-  }
-
-  .logo-text span:last-child {
-    color: #000;
-  }
-
-  .contact-header {
-    background-color: #00bfa6;
-    color: white;
-    padding: 60px 20px 40px;
-    text-align: center;
-  }
-
-  .contact-header h1 {
-    font-size: 36px;
-    font-weight: 900;
-  }
-
-  .contact-header h1 i {
-    margin-right: 10px;
-    animation: bounce 2s infinite;
-  }
-
-  .contact-content {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    text-align: center;
-  }
-
-  .contact-content img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 12px;
-    margin-bottom: 25px;
-    box-shadow: 6px 6px 15px rgba(0,0,0,0.1);
-  }
-
-  .contact-content p {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 30px;
-  }
-
-  .contact-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .whatsapp-btn {
-    display: inline-block;
-    background-color: #25D366;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 14px 30px;
-    border-radius: 50px;
-    text-decoration: none;
-    box-shadow: 0 0 10px rgba(0,0,0,0.15);
-    animation: pulse 2s infinite;
-  }
-
-  .whatsapp-btn i {
-    margin-right: 10px;
-    font-size: 22px;
-  }
-
-  .email-line {
-    font-size: 18px;
-    font-weight: 600;
-  }
-
-  .email-line a {
-    color: #00bfa6;
-    text-decoration: underline;
-  }
-
-  .working-hours {
-    font-size: 16px;
-    color: #666;
-  }
-
-  footer {
-    text-align: center;
-    font-size: 14px;
-    padding: 25px;
-    background: #f5efe1;
-    color: #777;
-    margin-top: 60px;
-  }
-
-  @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-6px); }
-  }
-
-  @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-  }
-
-  .contact-form-section {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #ffffff;
-    border: 2px solid #00bfa6;
-    border-radius: 10px;
-    box-shadow: 4px 4px 12px rgba(0,0,0,0.1);
-  }
-
-  @media (min-width: 769px) {
-    .contact-form-section {
-      width: 100%;
+    * {
+      box-sizing: border-box;
     }
-  }
 
-  @media (max-width: 768px) {
-    .contact-form-section {
-      width: 95%;
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f5efe1;
+      color: #222;
+      line-height: 1.8;
     }
-  }
 
-  .contact-form-section h2 {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 800;
-    color: #00bfa6;
-    margin-bottom: 20px;
-  }
-
-  form[name="easycreate-form"] input,
-  form[name="easycreate-form"] textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 16px;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
-  }
-
-  form[name="easycreate-form"] button {
-    width: 100%;
-    background: #00bfa6;
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 14px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-
-  .form-status888 {
-    text-align: center;
-    margin-top: 10px;
-    color: #333;
-    font-weight: 600;
-  }
-
-  .main-nav888 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: #e0f5f2;
-    padding: 10px;
-    font-weight: bold;
-    gap: 10px;
-  }
-
-  .main-nav888 a {
-    color: #00bfa6;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 16px;
-    padding: 6px 10px;
-  }
-
-  .main-nav888 a:hover {
-    color: #01907d;
-    text-decoration: underline;
-  }
-
-  @media (max-width: 768px) {
-    .contact-header h1 {
-      font-size: 26px;
+    header {
+      background-color: #f5efe1;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
+
+    .logo-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-img {
+      height: 40px;
+      border-radius: 6px;
+      border: 2px solid #00ffcc;
+      box-shadow: 0 0 8px #00ffcc;
+    }
+
     .logo-text {
-      font-size: 24px;
+      font-size: 30px;
+      font-weight: 900;
     }
-    .contact-content p {
-      font-size: 16px;
+
+    .logo-text span:first-child {
+      background-color: #00bfa6;
+      color: white;
+      padding: 2px 8px;
+      border-radius: 4px;
     }
-    .whatsapp-btn {
-      font-size: 16px;
-      padding: 12px 20px;
+
+    .logo-text span:last-child {
+      color: #000;
     }
+
+    .main-nav888 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      background-color: #e0f5f2;
+      padding: 10px;
+      font-weight: bold;
+      gap: 10px;
+    }
+
     .main-nav888 a {
-      font-size: 14px;
-      padding: 4px 8px;
+      color: #00bfa6;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 16px;
+      padding: 6px 10px;
     }
-  }
 
-  .footer-links888 {
-    font-size: 14px;
-    margin-bottom: 8px;
-  }
+    .main-nav888 a:hover {
+      color: #01907d;
+      text-decoration: underline;
+    }
 
-  .footer-links888 a {
-    color: #00bfa6;
-    text-decoration: none;
-    margin: 0 6px;
-  }
+    .contact-hero888 {
+      background-color: #00bfa6;
+      color: white;
+      padding: 60px 20px 40px;
+      text-align: center;
+    }
 
-  .footer-links888 a:hover {
-    text-decoration: underline;
-  }
+    .contact-hero888 h1 {
+      font-size: 36px;
+      font-weight: 900;
+    }
+
+    .contact-hero888 h1 i {
+      margin-right: 10px;
+      animation: bounce 2s infinite;
+    }
+
+    .contact-info888 {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .contact-info888 img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      box-shadow: 6px 6px 15px rgba(0,0,0,0.1);
+    }
+
+    .contact-info888 p {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .contact-info888 .whatsapp-btn {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 14px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+      animation: pulse 2s infinite;
+    }
+
+    .contact-info888 .whatsapp-btn i {
+      margin-right: 10px;
+      font-size: 22px;
+    }
+
+    .contact-info888 .email-line {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .contact-info888 .email-line a {
+      color: #00bfa6;
+      text-decoration: underline;
+    }
+
+    .contact-info888 .working-hours {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .contact-box888 {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #ffffff;
+      border: 2px solid #00bfa6;
+      border-radius: 10px;
+      box-shadow: 4px 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .contact-box888 h2 {
+      text-align: center;
+      font-size: 24px;
+      font-weight: 800;
+      color: #00bfa6;
+      margin-bottom: 20px;
+    }
+
+    form[name="easycreate-form"] input,
+    form[name="easycreate-form"] textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 16px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    form[name="easycreate-form"] button {
+      width: 100%;
+      background: #00bfa6;
+      color: #fff;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .form-status888 {
+      text-align: center;
+      margin-top: 10px;
+      color: #333;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 25px;
+      background: #f5efe1;
+      color: #777;
+      margin-top: 60px;
+    }
+
+    .footer-links888 {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .footer-links888 a {
+      color: #00bfa6;
+      text-decoration: none;
+      margin: 0 6px;
+    }
+
+    .footer-links888 a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 768px) {
+      .logo-text {
+        font-size: 24px;
+      }
+      .contact-hero888 h1 {
+        font-size: 26px;
+      }
+      .contact-info888 p {
+        font-size: 16px;
+      }
+      .contact-info888 .whatsapp-btn {
+        font-size: 16px;
+        padding: 12px 20px;
+      }
+      .main-nav888 a {
+        font-size: 14px;
+        padding: 4px 8px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -292,30 +273,28 @@
   <a href="terms.html">Terms / 条款</a>
 </nav>
 
-<section class="contact-header">
+<section class="contact-hero888">
   <h1><i class="fas fa-envelope-open-text"></i> Contact Us / 联系我们</h1>
 </section>
 
-<section class="contact-content">
+<section class="contact-info888">
   <img src="https://storage.perfectcdn.com/ijhexb/9tcx4ow58i6azmns.gif" alt="Contact GIF Placeholder">
   <p>欢迎您与我们联系，告诉我们您的创意与需求，我们将协助您把品牌视觉提升到更高的层次！</p>
 
-  <div class="contact-links">
-    <a class="whatsapp-btn" href="https://wa.me/601112686880" target="_blank">
-      <i class="fab fa-whatsapp"></i> WhatsApp 即时报价
-    </a>
+  <a class="whatsapp-btn" href="https://wa.me/601112686880" target="_blank">
+    <i class="fab fa-whatsapp"></i> WhatsApp 即时报价
+  </a>
 
-    <div class="email-line">
-      📧 Email: <a href="mailto:easycreatedesign2025@gmail.com">easycreatedesign2025@gmail.com</a>
-    </div>
+  <div class="email-line">
+    📧 Email: <a href="mailto:easycreatedesign2025@gmail.com">easycreatedesign2025@gmail.com</a>
+  </div>
 
-    <div class="working-hours">
-      🕒 工作时间：每天 10:00 AM - 8:00 PM（马来西亚时间）
-    </div>
+  <div class="working-hours">
+    🕒 工作时间：每天 10:00 AM - 8:00 PM（马来西亚时间）
   </div>
 </section>
 
-<section class="contact-form-section">
+<section class="contact-box888">
   <h2><i class="fas fa-paper-plane"></i> Send Us a Message / 留言给我们</h2>
   <form name="easycreate-form" method="POST">
     <input type="text" name="name" placeholder="Your Name / 您的名字" required>
@@ -340,8 +319,7 @@
 </footer>
 
 <script>
-  const scriptURL =
-'https://script.google.com/macros/s/AKfycbyEneYBjONVYoMiQPcuweq04sHyLq5dRkF2mEOu3xpVF-TOlB-A_W5iHBFfJZJw8UxR2w/exec';
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyEneYBjONVYoMiQPcuweq04sHyLq5dRkF2mEOu3xpVF-TOlB-A_W5iHBFfJZJw8UxR2w/exec';
   const form = document.forms['easycreate-form'];
   const status = document.querySelector('.form-status888');
 
@@ -360,7 +338,5 @@
       });
   });
 </script>
-
 </body>
 </html>
-
